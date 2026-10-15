@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="Un universo de Liam Payne y One Direction, dedicado con amor por Víctor a Greverly.">
+  <title>Para Greverly, con amor de Víctor ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("liam-theme");
+      if (savedTheme === "dark") document.documentElement.dataset.theme = "dark";
+    } catch (_) {}
+  </script>
+</head>
+<body>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-stars" aria-hidden="true">✦ · ˚ ✧ · ˚ ✦</div>
+    <p class="eyebrow">de su niño lloco</p>
+    <h1>Para Greverly,<br><em>mi niña especial ♡</em></h1>
+    <p class="welcome-copy">Mi niña hermosa, le hice esta página para que recuerde a Liam y pueda sentirse feliz viendo sus fotos y escuchando sus canciones. 💗🕊️ </p>
+    <button class="button button-primary" id="enterButton" type="button">Regrese al pasado conmigo, waye. :) 💗✨<span>♡</span></button>
+    <p class="welcome-note">mejor con audífonos y el corazón abierto</p>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">♡ <span>En memoria de Liam Payne</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#canciones">Música</a>
+      <a href="#carta">Carta</a>
+      <a href="#biografia">Liam</a>
+      <a href="#fan-counter">Contador</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#sorpresa">Sorpresa</a>
+    </nav>
+  </header>
+
+  <button class="theme-toggle theme-toggle-floating" id="themeToggle" type="button" aria-label="Activar modo noche" aria-pressed="false" title="Cambiar tema"><span id="themeIcon" aria-hidden="true">☾</span><span class="theme-label">Modo noche</span></button>
+<button
+  class="background-music-toggle"
+  id="backgroundMusicToggle"
+  type="button"
+  aria-pressed="false"
+  aria-label="Silenciar música de fondo"
+  title="Silenciar música de fondo"
+>
+  <span id="backgroundMusicIcon" aria-hidden="true">♫</span>
+  <span id="backgroundMusicLabel">Música activada</span>
+</button>
+
+<audio id="backgroundMusic" src="audios/suhine.mpeg" preload="auto"></audio>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">PARA GREVERLY · LIAM PAYNE · ONE DIRECTION</p>
+        <h1>Un pedazo de liam para usted,<br><em>Greverly.</em></h1>
+        <p class="hero-copy">Creé esta paguina pensando en usted: en su cariño por Liam, en las canciones que la hacen feliz y en todas las pequeñas cosas que la hacen única.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#galeria"><span>Empecemos</span></a>
+          <a class="text-link" href="#carta">Hay una carta para usted ↓</a>
+        </div>
+        <div class="hero-signature">con amor, Víctor o como le gusta, Martin<span>♡</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Collage decorativo de recuerdos">
+        <div class="hero-photo photo-back"><img src="img/Foto1.jpg" alt="Foto de Liam Payne" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')"><span>forever in our playlist</span></div>
+        <div class="hero-photo photo-front"><img src="img/Foto6.jpg" alt="Retrato de Liam Payne" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')"><span>♡ liam ♡</span></div>
+        <span class="floating-heart heart-a" aria-hidden="true">♡</span><span class="floating-heart heart-b" aria-hidden="true">✦</span>
+      </div>
+      <a class="scroll-cue" href="#galeria">desliza para descubrir <span>↓</span></a>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading reveal">
+        <p class="eyebrow">PEQUEÑOS RECUERDOS</p>
+        <h2>Un álbum lleno de <em>momentos</em></h2>
+        <p>Desliza, toca una foto y guarda este pequeño instante.</p>
+      </div>
+      <div class="album-shell reveal">
+        <button class="round-button album-control" id="albumPrev" type="button" aria-label="Foto anterior">←</button>
+        <div class="album-viewport">
+          <div class="album-track" id="albumTrack">
+            <button class="album-card" type="button" data-caption="Una sonrisa que ilumina todo."><img src="img/sushine.jpeg" alt="Liam Payne, foto 1" loading="lazy"><span class="photo-caption">a little sunshine ♡</span></button>
+            <button class="album-card" type="button" data-caption="Hay recuerdos que viven en cada canción."><img src="img/parejita directioner.jpg" alt="Liam Payne, foto 2" loading="lazy"><span class="photo-caption">forever in our hearts</span></button>
+            <button class="album-card" type="button" data-caption="Un momento más para sonreír."><img src="img/Foto4.jpg" alt="Liam Payne, foto 3" loading="lazy"><span class="photo-caption">golden memories</span></button>
+            <button class="album-card" type="button" data-caption="La música siempre encuentra el camino."><img src="img/3.jpeg" alt="Liam Payne, foto 4" loading="lazy"><span class="photo-caption">music & memories</span></button>
+            <button class="album-card" type="button" data-caption="Una pequeña estrella en nuestro universo."><img src="img/4.jpeg" alt="Liam Payne, foto 5" loading="lazy"><span class="photo-caption">our little universe</span></button>
+            <button class="album-card" type="button" data-caption="Gracias por tantos recuerdos y canciones."><img src="img/reto del corazon.jpg" alt="Liam Payne, foto 6" loading="lazy"><span class="photo-caption">always remembered ♡</span></button>
+          </div>
+        </div>
+        <button class="round-button album-control" id="albumNext" type="button" aria-label="Foto siguiente">→</button>
+      </div>
+      <div class="album-dots" id="albumDots" aria-label="Seleccionar foto"></div>
+      <p class="small-note">Desliza Para Ver Todas Las Fotos </p>
+    </section>
+
+    <section class="section music-section" id="canciones">
+      <div class="section-heading reveal">
+        <p class="eyebrow">DALE AL PLAY</p>
+        <h2>Una canción, mil <em>emociones</em></h2>
+        <p>Un pequeño espacio para escuchar esos temas que siempre significan algo.</p>
+      </div>
+      <div class="music-layout reveal">
+        <div class="record-art" aria-hidden="true"><div class="record"><div class="record-label">♡</div></div><span>For you </span></div>
+        <div class="music-player">
+          <p class="eyebrow">Escuche De Nuevo La Voz Que Un Dia La Salvo.</p>
+          <h3>Un cielo lleno de Liam ⭐</h3>
+          <p class="muted">Mi niña coloque unas de sus canciones favoritas aqui, si quiere que ponga mas solo digamelo. y las agregamos .</p>
+          <label class="field-label" for="trackSelect">Elige una canción</label>
+       
+
+<select id="trackSelect" class="track-select">
+  <option value="audios/musica1.mpeg">Home with You</option>
+  <option value="audios/musica2.mpeg">Live Forever</option>
+  <option value="audios/musica3.mpeg">Rest in Peace</option>
+</select>
+          </select>
+          <audio id="audioPlayer" controls preload="metadata">
+            Tu navegador no puede reproducir audio HTML5.
+          </audio>
+          <p class="small-note" id="audioStatus">Si aparece este mensage niño borro pureta 001.</p>
+          <div class="song-chips"><span>One Direction</span><span>Liam Payne</span><span>memories ♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="carta">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ABRALA CUANDO SE SIENTA MAL</p>
+        <h2>Escribí Una Cartita <em>Para Usted</em></h2>
+        <p>Hay palabras que merecen abrirse despacito.</p>
+      </div>
+      <div class="letter-area reveal">
+        <button class="envelope" id="envelopeButton" type="button" aria-expanded="false" aria-controls="letterPaper">
+          <span class="envelope-back"></span><span class="letter-paper" id="letterPaper">
+            <span class="letter-date">Para Greverly, con todo mi cariño ♡</span>
+            <strong>Mi querida Greverly: ♡</strong>
+            <span>Quise hacerte esta página para regalarte un lugarcito que se sienta tuyo, lleno de Liam Payne, One Direction, canciones, recuerdos y pequeños detalles que te saquen una sonrisa.</span>
+            <span>Tal vez no exista una página capaz de explicar todo el cariño que te tengo, pero cada parte de esta la preparé pensando en ti. Espero que cuando la visites recuerdes lo especial que eres para mí y cuánto deseo verte feliz.</span>
+            <em>Con amor, Víctor. Esta pequeña parte de internet es para ti. ♡</em>
+          </span>
+          <span class="envelope-front"><span>♡</span></span><span class="envelope-flap"></span>
+        </button>
+        <p class="envelope-hint" id="envelopeHint">Toca el sobre para abrir la carta ♡</p>
+      </div>
+    </section>
+
+    <section class="section bio-section" id="biografia">
+      <div class="bio-card reveal">
+        <div class="bio-image"><img src="img/prado.jpeg" alt="Liam Payne" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')"><span class="image-sticker">a voice we remember ♡</span></div>
+        <div class="bio-copy">
+          <p class="eyebrow">UN ARTISTA, MUCHOS RECUERDOS</p>
+          <h2>Liam <em>Payne</em></h2>
+          <p>Liam James Payne fue cantante y compositor británico, conocido mundialmente como integrante de One Direction y por su carrera en solitario.</p>
+          <p>Nació el 29 de agosto de 1993 en Wolverhampton, Inglaterra. Su voz y su música forman parte de la historia emocional de muchísimos fans.</p>
+          <p class="bio-quote">“La música puede acompañarnos incluso cuando las palabras no alcanzan.”</p>
+          <div class="bio-tags"><span>One Direction</span><span>1993–2024</span><span>Forever in our hearts</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section counter-section" id="fan-counter">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CADA DÍA CUENTA</p>
+        <h2>Tu historia como fan <em>♡</em></h2>
+        <p>Elige la fecha en que comenzó esta bonita aventura.</p>
+      </div>
+      <div class="counter-card reveal">
+        <div class="counter-icon" aria-hidden="true">♡</div>
+        <label for="fanDate">¿Desde qué fecha eres fan?</label>
+        <input type="date" id="fanDate">
+        <p class="counter-result" id="counterResult" aria-live="polite">Elige una fecha para contar tus recuerdos.</p>
+        <p class="small-note">Puedes cambiar la fecha cuando quieras.</p>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading reveal">
+        <p class="eyebrow">¿QUÉ TAN DIRECTIONER ERES?</p>
+        <h2>Un mini <em>quiz</em></h2>
+        <p>Responde cinco preguntas y descubre tu resultado.</p>
+      </div>
+      <div class="quiz-card reveal" id="quizCard">
+        <div class="quiz-topline"><span id="quizProgress">Pregunta 1 de 5</span><span>♡</span></div>
+        <div class="quiz-progress-bar"><span id="quizProgressBar"></span></div>
+        <h3 id="quizQuestion">¿En qué año se formó One Direction?</h3>
+        <div class="quiz-options" id="quizOptions">
+          <button type="button" class="quiz-option" data-answer="2010">2010</button>
+          <button type="button" class="quiz-option" data-answer="2012">2012</button>
+          <button type="button" class="quiz-option" data-answer="2008">2008</button>
+          <button type="button" class="quiz-option" data-answer="2015">2015</button>
+        </div>
+        <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+        <button class="button button-primary" id="quizNext" type="button" disabled>Siguiente pregunta →</button>
+        <div class="quiz-result" id="quizResult" hidden></div>
+        <button class="button button-outline" id="quizRestart" type="button" hidden>Jugar otra vez ↻</button>
+      </div>
+    </section>
+
+    <section class="section games-section" id="juegos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">EL CLUB DE LIAM ♡</p>
+        <h2>¡Hora de <em>jugar!</em></h2>
+        <p>Cuatro mini juegos para demostrar cuánto lo conoces. One Direction también tiene su lugar, pero Liam es la estrella de este rincón. 💗</p>
+      </div>
+      <div class="games-grid">
+        <article class="game-card reveal" id="songGame">
+          <span class="game-number">01 · ADIVINA</span><div class="game-emoji">🎧</div>
+          <h3>¿Qué canción es?</h3><p class="game-description" id="songClue">Pista: el primer sencillo solista de Liam, con ritmo y una colaboración de Quavo.</p>
+          <div class="game-options" id="songOptions"></div><p class="game-feedback" id="songFeedback" aria-live="polite"></p>
+          <button class="button button-outline" id="songNext" type="button">Otra pista ♡</button>
+        </article>
+        <article class="game-card reveal" id="memoryGame">
+          <span class="game-number">02 · MEMORIA</span><div class="game-emoji">🧠</div>
+          <h3>Parejitas directioner</h3><p class="game-description">Encuentra las parejas de símbolos. ¡Intenta hacerlo con el menor número de movimientos!</p>
+          <div class="memory-grid" id="memoryGrid" aria-label="Juego de memoria"></div><p class="game-feedback" id="memoryFeedback" aria-live="polite">Parejas encontradas: 0 de 6</p>
+          <button class="button button-outline" id="memoryRestart" type="button">Mezclar de nuevo ↻</button>
+        </article>
+        <article class="game-card reveal" id="liamVibeGame">
+          <span class="game-number">03 · TU VIBE LIAM</span><div class="game-emoji">💗</div>
+          <h3>¿Qué era de Liam va con Usted?</h3><p class="game-description">Elige lo que más la representa y descubra su resultado musical.</p>
+          <div class="vibe-choices" id="vibeChoices">
+            <button type="button" data-vibe="1">✨ Brillante, dulce y llena de energía</button>
+            <button type="button" data-vibe="2">🎤 Segura, intensa y con actitud</button>
+            <button type="button" data-vibe="3">🌙 Sensible, tranquila y soñadora</button>
+          </div><p class="game-feedback" id="vibeFeedback" aria-live="polite"></p>
+        </article>
+        <article class="game-card reveal" id="challengeGame">
+          <span class="game-number">04 · RETO FAN</span><div class="game-emoji">🎀</div>
+          <h3>Reto del corazón</h3><p class="game-description">Saca un reto al azar para hacer este pequeño club de fans todavía más divertido.</p>
+          <div class="challenge-box" id="challengeText">Tu próximo reto te está esperando… ♡</div>
+          <button class="button button-primary" id="challengeButton" type="button">Dame un reto ✨</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surprise-section" id="sorpresa">
+      <div class="surprise-card reveal">
+        <div class="surprise-stars" aria-hidden="true">✦ ˚ · ✧ · ˚ ✦</div>
+        <p class="eyebrow">PSST… HAY ALGO MÁS</p>
+        <h2>Una sorpresa <em>secreta</em></h2>
+        <p>Greverly, hay un mensajito mio esperando por ti. Prueba la palabra que te hace protagonista de esta página. 💗</p>
+        <form id="secretForm" class="secret-form">
+          <label class="sr-only" for="secretPassword">Palabra secreta</label>
+          <input id="secretPassword" name="password" type="password" placeholder="Escribe la palabra secreta…" autocomplete="off" required>
+          <button class="button button-primary" type="submit">Desbloquear ♡</button>
+        </form>
+        <p class="secret-feedback" id="secretFeedback" aria-live="polite"></p>
+        <div class="surprise-message" id="surpriseMessage" hidden>
+          <span class="surprise-big-heart">♡</span>
+          <h3>¡Encontraste el secreto!</h3>
+          <p>Greverly, si llegaste hasta aquí, quiero que sepas que hice este rincón pensando en ti. Ojalá cada canción de Liam te recuerde lo mucho que mereces sonreír, y que esta pequeña sorpresa te haga sentir querida. Gracias por ser tú y por dejarme dedicarte algo tan especial. 💗</p>
+          <p class="secret-signature">Con todo mi cariño, Víctor ♡</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-heart" href="#inicio" aria-label="Volver arriba">♡</a>
+    <p>Hecho con cariño por Víctor, especialmente para mi niña Greverly. ♡</p>
+    <p class="footer-small">Una página para la fan mas hermosa, creada como homenaje.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Cerrar foto">×</button>
+    <button class="lightbox-backdrop" id="lightboxBackdrop" type="button" aria-label="Cerrar foto"></button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+  </div>
+  <div class="effect-layer" id="effectLayer" aria-hidden="true"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
